@@ -2,7 +2,7 @@
 class RustgisCli < Formula
   desc "Command-line tool and MCP server for the RustGIS geographic information system"
   homepage "https://rustgis.app/"
-  version "0.1.0"
+  version "0.2.0"
   license "Apache-2.0"
 
   livecheck do
@@ -13,22 +13,22 @@ class RustgisCli < Formula
   on_macos do
     on_arm do
       url "https://github.com/opengeos/RustGIS/releases/download/v#{version}/rustgis-cli-#{version}-macos-aarch64.tar.gz"
-      sha256 "a326ca86e40001355627058d076810aff03f7f0ae8fb0a231a2bbabb2a659c37"
+      sha256 "8a381c3f3c342642521b9407291b7e057665a5745002e94e43c9b2e2ad925e3f"
     end
     on_intel do
       url "https://github.com/opengeos/RustGIS/releases/download/v#{version}/rustgis-cli-#{version}-macos-x86_64.tar.gz"
-      sha256 "0c796a4c747c02081dd718143396c41cdd2f914215054c6e8260da2ac70bd526"
+      sha256 "6861dfd45d29a79c761a9d8a0d6aa8ff0082c0236ce26c84dbe6a1cb3973f6e0"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/opengeos/RustGIS/releases/download/v#{version}/RustGIS-#{version}-linux-aarch64.tar.gz"
-      sha256 "0d9d1497cdd57896c775701d493afa16abdf6e91d695b60887ee23f8a0166eeb"
+      sha256 "2ea46ea991ea73fe11364d86632a00935e7aa3d2a441d09e214f65cd05c989d5"
     end
     on_intel do
       url "https://github.com/opengeos/RustGIS/releases/download/v#{version}/RustGIS-#{version}-linux-x86_64.tar.gz"
-      sha256 "c9ad3c39c83dd8992dac55cbfa0e458923de0209804c500835eeecf519132864"
+      sha256 "1cd13d8c5d84777537d211314adc745ccf9341707b546555e24a294f990b384a"
     end
   end
 
