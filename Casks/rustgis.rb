@@ -6,13 +6,12 @@ cask "rustgis" do
   sha256 arm:   "e6d3ebff7f0814ef202e68a2aa4f9c2f986c50c5bf62fc4f1679e4096572ce86",
          intel: "6d99f15a5c97b241f26d41b64486a64c2295fabf9bf37fbe665a89b99cae93eb"
 
-  url "https://github.com/opengeos/RustGIS/releases/download/v#{version}/RustGIS-#{version}-macos-#{arch}.dmg",
-      verified: "github.com/opengeos/RustGIS/"
+  url "https://github.com/opengeos/RustGIS/releases/download/v#{version}/RustGIS-#{version}-macos-#{arch}.dmg"
   name "RustGIS"
   desc "GIS platform"
   homepage "https://rustgis.app/"
 
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
 
   app "RustGIS.app"
 
